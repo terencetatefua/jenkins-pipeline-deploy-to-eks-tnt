@@ -21,6 +21,8 @@ module "myapp-vpc" {
     "kubernetes.io/role/elb"                  = 1
   }
 
+# made changes#
+
   private_subnet_tags = {
     "kubernetes.io/cluster/myapp-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"         = 1
